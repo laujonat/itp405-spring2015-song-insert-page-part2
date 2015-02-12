@@ -1,6 +1,5 @@
 <?php
 	namespace Itp\Music;
-	// require_once __DIR__ . '/Database.php';
 
 	use \Itp\Base\Database;
 	use \PDO;
@@ -8,10 +7,7 @@
 	class Song extends Database {
 		protected $title, $id, $genre_id, $price;
 
-
 		public function save() {
-			// echo $_SESSION['artistname'];
-
 
 			$stmt = static::$pdo->prepare("INSERT INTO songs (title, artist_id, genre_id, price) VALUES(?, ?, ?, ?)");
 			$stmt->bindParam(1, $title2);
@@ -22,11 +18,8 @@
 			$id2 = $this->id;
 			$genre_id2 = $this->genre_id;
 			$price2 = $this->price;
-
-
+			
 			$stmt->execute();	
-
-
 		}
 
 		public function setTitle($title) {

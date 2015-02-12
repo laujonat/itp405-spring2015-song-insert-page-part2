@@ -6,5 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Itp\\Base\\Database' => $baseDir . '/App/Itp/Base/Database.php',
+    'Itp\\Music\\ArtistQuery' => $baseDir . '/App/Itp/Music/ArtistQuery.php',
+    'Itp\\Music\\GenreQuery' => $baseDir . '/App/Itp/Music/GenreQuery.php',
+    'Itp\\Music\\Song' => $baseDir . '/App/Itp/Music/Song.php',
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
 );

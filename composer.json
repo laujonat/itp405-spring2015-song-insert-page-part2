@@ -4,8 +4,10 @@
     },
     "autoload": {
     	"files" : [],
-    	"classMap" : [],
-        "psr-4": {
+    	"classmap" : [
+    		"App/Itp"
+    	],
+        "psr-4" : {
             "Itp\\": "App/Itp"
         }
     }
